@@ -14,7 +14,7 @@
 .button-styler {
   background-color: #17A2B8;
   border-radius: 5px;
-  width: 100px;
+  width: 220px;
   height: 50px;
   font-size: 18px;
   color: #FFFFFF;
@@ -172,9 +172,18 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
+h3 {
+  font-size: 3.2rem;
+  padding-right: 300px;
+}
+
 h4 {
+  font-size: 3.2rem;
+}
+
+h5 {
   font-size: 2.5rem;
-  padding-bottom: 10px;
+  /*padding-right: 100px; */
 }
 p {
   line-height: 1.5;
@@ -189,15 +198,6 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-}
-header nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-header nav a {
-  padding-right: 50px;
-  margin-bottom: 30px;
-  font: #212529;
 }
 .footer {
   width: 100%;
@@ -219,10 +219,16 @@ header nav a {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+  /*@media {
+        width: 80%;
+      }*/
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+  /*@media {
+        width: 80px;
+      }*/
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -259,9 +265,20 @@ header nav a {
 .home .btn {
   background-color: #17A2B8;
   border-radius: 5px;
-  width: 100px;
+  width: 220px;
   height: 50px;
   font-size: 18px;
   color: #FFFFFF;
   text-align: center;
+}
+.home header nav {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  padding-right: 200px;
+}
+.home header nav a {
+  /*padding-right: 100px; */
+  /*margin-bottom: 30px;*/
+  font: #212529;
 }
