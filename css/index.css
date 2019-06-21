@@ -191,12 +191,13 @@ img {
   margin: 0 auto;
 }
 header nav {
-  justify-content: space-between;
-  padding-right: 400px;
+  display: flex;
+  justify-content: space-evenly;
 }
 header nav a {
-  padding-right: 25px;
-  margin-bottom: 20px;
+  padding-right: 50px;
+  margin-bottom: 30px;
+  font: #212529;
 }
 .footer {
   width: 100%;
@@ -214,7 +215,6 @@ header nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 50%;
 }
 .home .content-section .text-content {
   width: 48%;
