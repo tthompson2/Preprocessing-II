@@ -176,11 +176,6 @@ h3 {
   font-size: 3.2rem;
   padding-right: 300px;
 }
-
-h4 {
-  font-size: 3.2rem;
-}
-
 h5 {
   font-size: 2.5rem;
   /*padding-right: 100px; */
@@ -245,12 +240,22 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media screen {
+  .home .inverse-content .img-content {
+    margin: 95%;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media img {
+  .home .content-destination img {
+    margin: 95%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -280,5 +285,6 @@ img {
 .home header nav a {
   /*padding-right: 100px; */
   /*margin-bottom: 30px;*/
-  font: #212529;
+  color: #212529;
+  text-decoration: none;
 }
