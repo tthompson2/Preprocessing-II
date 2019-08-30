@@ -2,9 +2,8 @@
 
   .content-section {
     margin: 30px 0;
-    .flex-display();
+    .custom-flex(space-between, none);
     flex-wrap: wrap;
-    justify-content: space-between;
     
     .text-content {
       width: 48%;
@@ -16,7 +15,7 @@
     }
 
     .img-content {
-      width: 48%;
+      width: 47%;
       padding-left: 1%;
 
       /*@media {
@@ -57,8 +56,7 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .custom-flex(space-between, none);
 
     .destination {
       width: 30%;
@@ -68,18 +66,3 @@
   .btn {
      .button-styler();
   }
-
-  header nav {
-    .flex-display();
-    padding-bottom: 20px;
-    justify-content: space-between;
-    padding-right: 200px;
-    
-    a {
-        /*padding-right: 100px; */
-        /*margin-bottom: 30px;*/
-        color: @font-color;
-        text-decoration: none;
-    }
-}
-}// home
