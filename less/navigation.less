@@ -1,11 +1,31 @@
 header nav {
+    padding-top: 3%;
     .custom-flex(space-between, none);
     padding-bottom: 3%;
+
+    @media @phones {
+
+        header nav {
+            padding-top: 3%;
+            .custom-flex(space-between, none);
+            flex-direction: column;
+        }
+    }
     
     a {
         padding-right: 50px;
         color: @font-color;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         text-decoration: none;
+    }
+
+    @media @phones {
+
+        a {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: @font-color;
+        }
+        
     }
 }

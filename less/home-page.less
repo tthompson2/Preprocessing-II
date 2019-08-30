@@ -9,16 +9,27 @@
       width: 48%;
       padding-right: 1%;
 
-      /*@media {
-        width: 80%;
-      }*/
+      @media @phones {
+        .content-section {
+          .custom-flex(space-between, none);
+          flex-direction: column;
+        }
+
+        .text-content {
+          width: 80%;
+        }
+
+        .img-content {
+          width: 80%;
+        }
+      }
     }
 
     .img-content {
       width: 47%;
       padding-left: 1%;
 
-      /*@media {
+      /*@media @phones{
         width: 80px;
       }*/
 

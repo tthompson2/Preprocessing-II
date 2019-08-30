@@ -192,16 +192,33 @@ img {
   margin: 0 auto;
 }
 header nav {
+  padding-top: 3%;
   display: flex;
   justify-content: space-between;
   text-align: none;
   padding-bottom: 3%;
 }
+@media (max-width: 500px) {
+  header nav header nav {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    text-align: none;
+    flex-direction: column;
+  }
+}
 header nav a {
   padding-right: 50px;
   color: #212529;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #212529;
+  }
 }
 .footer {
   width: 100%;
@@ -224,14 +241,25 @@ header nav a {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
-  /*@media {
-        width: 80%;
-      }*/
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content .content-section {
+    display: flex;
+    justify-content: space-between;
+    text-align: none;
+    flex-direction: column;
+  }
+  .home .content-section .text-content .text-content {
+    width: 80%;
+  }
+  .home .content-section .text-content .img-content {
+    width: 80%;
+  }
 }
 .home .content-section .img-content {
   width: 47%;
   padding-left: 1%;
-  /*@media {
+  /*@media @phones{
         width: 80px;
       }*/
 }
